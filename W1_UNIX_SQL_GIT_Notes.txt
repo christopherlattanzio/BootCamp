@@ -1,0 +1,118 @@
+Bootcamp - notes
+
+Command lines
+
+ol_chrislatt@nodeD:~$ mkdir -p ~/examples/multiple/levels/down
+ol_chrislatt@nodeD:~$ ls -R ~/examples
+
+cp -r to copy a folder
+cp -r source destination
+
+mv source destination
+
+rm -r 
+
+cat - whats in file
+
+less - shows one screen at a time
+
+ls *txt
+cat *abc*
+
+Adds typed text into file
+echo some random text > random.txt
+
+> adds returned info into file
+>> append to file
+
+Vim commands
+h - left
+j - down
+k - up
+l - right
+
+x
+dw
+dd - delete line
+D
+
+ZZ - exit and save
+:wq - save quit
+:w
+:q! - Firce quit
+
+v - visual mode
+shift v
+
+grep - find text in files
+wc - lines, words, char
+sort -k5 - 5th field
+sort -k5 -n - to sort numbers
+sort -k2 —field-separator=';' --key=2,1,3
+
+
+scp local file ol_chrislatt@216.230.228.88:directory - copy to remote server
+scp ol_chrislatt@216.230.228.88:dirtory local file- copy to local
+
+curl -O URL
+
+----------------------------------------------------------------------------
+SQL
+
+Show tables;
+describe Table Name;
+
+SELECT
+FROM
+GROUP BY
+ORDER BY
+
+SELECT *, column/column as column;
+
+SELECT DISTINCT - no duplicates
+
+WHERE before grouping
+HAVING results after grouping
+
+GROUP BY column 1, column2
+
+SELECT * FROM table JOIN Left table ON left table.column = right table.column;
+
+LIMIT # - limits that manys rows
+
+CREATE DATABASE DB name
+DROP DATABASE DB name
+TRUNCATE TABLE DB name - empty table
+DELETE FROM DB name WHERE codition; - delete rows
+SHOW DATABASES
+SHOW TABLES
+DESCRIBE table-name
+
+INSERT INTO - add records
+LOAD DATA - add from file
+UPDATE - update existing record
+
+
+load data local infile 'iris.csv'
+into table iris 
+fields terminated by ',' 
+optionally enclosed by '"' 
+lines terminated by '\n' ignore 1 lines;
+
+CREATE TABLE table-name
+AS select-statement;
+
+
+UNION operator to get a full outer join
+left outer join
+union
+right outer join
+
+
+----------------------------------------------------------------------------
+Git
+
+
+Git status - what's up
+Git add filename - to track changes
+
