@@ -1,5 +1,6 @@
 Bootcamp - notes
 
+
 Command lines
 
 ol_chrislatt@nodeD:~$ mkdir -p ~/examples/multiple/levels/down
@@ -21,6 +22,8 @@ cat *abc*
 
 Adds typed text into file
 echo some random text > random.txt
+echo "text" >> filename - appends
+
 
 > adds returned info into file
 >> append to file
@@ -115,4 +118,10 @@ Git
 
 Git status - what's up
 Git add filename - to track changes
+Git rm --cache filename - to stop tracking
+git commit -m "changes" - to commit chnages to local repository
+git log --graph --decorate - changes made
+git add --all - adds all files to stageing area
+git reset HEAD file names - resets chnages to previous commit
+git commit -a -m "notes" - adds and commits
 
